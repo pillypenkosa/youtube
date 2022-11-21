@@ -1,15 +1,54 @@
 cmp-middle {
 	all: initial;
-
 	display: flex;
+
+	font-family: Courier;
 	
 }
 
 
+	cmp-middle a {
+		text-decoration: none;
+		color: yellow;
+	}
 
 
 
 
+
+
+	cmp-middle #content {
+		display: flex;
+
+	}
+
+	cmp-middle .video {
+		position: fixed;
+		width: 890px;
+		top: 70px;
+		background: linear-gradient( to left, #009, #000 );
+	}
+		cmp-middle .video .screen {
+			height: 500px;
+			width: 100%;
+		}
+			cmp-middle .video .screen iframe {
+				height: 100%;
+				width: 100%;
+			}
+
+		cmp-middle .video .title {
+			padding: 5px;
+			font-size: 20px;
+			font-style: oblique;
+			color: #fff;
+		}
+
+
+
+	cmp-middle .list {
+		margin: 0 0 0 900px;
+	}
 
 
 

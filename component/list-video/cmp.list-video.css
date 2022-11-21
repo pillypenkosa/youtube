@@ -1,0 +1,31 @@
+cmp-list-video {
+	all: unset;
+	display: block;
+
+	font-family: Courier;
+	color: #fff;
+
+}
+
+	cmp-list-video .each {
+		cursor: pointer;
+	}
+		cmp-list-video .each:hover {
+			background: linear-gradient( to right, #001, #009 );
+		}
+
+	cmp-list-video .each .img {
+		height: 150px;
+		width: 220px;
+	}
+		cmp-list-video .each .img img {
+			height: 100%;
+			width: 100%;
+		}
+
+
+
+
+
+
+

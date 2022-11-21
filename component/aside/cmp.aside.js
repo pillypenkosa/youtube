@@ -13,12 +13,16 @@ class ComponentAside {
 
 	static arrBtns = [
 
-		{ title: 'ASMR' 		, id: 'asmr' , },
-		{ title: 'Comedy' 		, id: 'comedy' , },
-		{ title: 'English' 		, id: 'english' , },
-		{ title: 'КВК' 			, id: 'kvn' , },
-		{ title: 'Кліпи' 		, id: 'clips' , },
-		{ title: 'Фільми' 		, id: 'films' , },
+		{ title: 'ASMR' 			, id: 'asmr' 			, },
+		{ title: 'Comedy' 			, id: 'comedy' 			, },
+		{ title: 'English' 			, id: 'english' 		, },
+		{ title: 'КВК' 				, id: 'kvn' 			, },
+		{ title: 'Кліпи' 			, id: 'clips' 			, },
+		{ title: 'Программування' 	, id: 'programming' 	, },
+		//{ title: 'Фільми' 			, id: 'films' 			, },
+
+
+
 
 
 
@@ -53,35 +57,14 @@ class ComponentAside {
 		// подсветка кнопок
 		btnLight( 'cmp-aside', id );
 
-
+/*
 		// очистка контента
 		let content = document.getElementById( 'content' );
 		content.innerHTML = '';
+*/
 
 
-
-
-
-
-		if ( id == 'asmr' ) 
-			content.innerHTML = ComponentAsmr.html();
-
-		if ( id == 'clips' ) 
-			content.innerHTML = ComponentClips.html();
-
-		if ( id == 'comedy' ) 
-			content.innerHTML = ComponentComedy.html();
-
-		if ( id == 'english' ) 
-			content.innerHTML = ComponentEnglish.html();
-
-		if ( id == 'films' ) 
-			content.innerHTML = ComponentFilms.html();
-
-		if ( id == 'kvn' ) 
-			content.innerHTML = ComponentKvn.html();
-
-
+		ComponentMiddle.showContent( id );
 
 
 	} 
