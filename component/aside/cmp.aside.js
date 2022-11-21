@@ -11,31 +11,11 @@
 class ComponentAside {
 
 
-	static arrBtns = [
-
-		{ title: 'ASMR' 			, id: 'asmr' 			, },
-		{ title: 'Comedy' 			, id: 'comedy' 			, },
-		{ title: 'English' 			, id: 'english' 		, },
-		{ title: 'КВК' 				, id: 'kvn' 			, },
-		{ title: 'Кліпи' 			, id: 'clips' 			, },
-		{ title: 'Программування' 	, id: 'programming' 	, },
-		//{ title: 'Фільми' 			, id: 'films' 			, },
-
-
-
-
-
-
-
-	];
-
-
-
 	static html() {
 
 		let innerHTML = '';
 
-		this.arrBtns.forEach( k => {
+		arrYoutube.forEach( k => {
 			innerHTML += getComponentHtml({ 
 				tag: 'btn', 
 				innerHTML: k.title, 
@@ -46,6 +26,7 @@ class ComponentAside {
 				], 
 			});
 		});
+
 
 		return getComponentHtml({ tag: 'aside', innerHTML, });
 	}

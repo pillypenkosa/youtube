@@ -6,16 +6,21 @@
 class ComponentMiddle {
 
 
+	static arrFiltred = [];
+
+
+
+
 
 	static html() {
+
+
 
 
 		return getComponentHtml({ tag: 'middle',
 			innerHTML: `
 				${ ComponentAside.html() }
-				<div id="content">
-
-				</div>
+				<div id="content"></div>
 			`, 
 		});
 	}
@@ -27,146 +32,81 @@ class ComponentMiddle {
 
 		//alert( id );
 
+		//let htmVideolList 	= '';
+		let htmlNav 		= '';
 
-		let htmVideolList = '';
 
 
-		let arrFiltred = [];
-		if ( id == 'asmr' || id == 'comedy' || id == 'clips' || id == 'kvn' ) {
+		if ( id == 'films' ) {
 
-			arrFiltred = arrYoutube.filter( k => k.id == id );
-			console.log( arrFiltred[ 0 ] );
 
-			if ( arrFiltred[ 0 ].arr ) {
+		} else {
+
+			this.arrFiltred = arrYoutube.filter( k => k.id == id );
+			//console.log( this.arrFiltred[ 0 ] );
+
+
+			if ( this.arrFiltred[ 0 ].nav ) {
 				//alert( 555 );
 
-				htmVideolList = ComponentListVideo.html( arrFiltred[ 0 ].arr );
+				this.arrFiltred[ 0 ].nav.forEach( k => {
+					htmlNav += ComponentBtn.html( k.title, [ 
+						{ k: 'title' 	, v: k.title 									, },
+						{ k: 'onclick' 	, v: `ComponentMiddle.clcNav( '${ k.id }' )` 	, },
+						{ k: 'data-id' 	, v: k.id 										, },
+					]);
+				});
+
+				//htmVideolList = ComponentListVideo.html( this.arrFiltred[ 0 ].arr );
 			}
+
+/*
+			if ( this.arrFiltred[ 0 ].arr ) {
+				//alert( 555 );
+
+				htmVideolList = ComponentListVideo.html( this.arrFiltred[ 0 ].arr );
+			}
+*/
 		}
+
 
 
 		document.getElementById( 'content' ).innerHTML = `
 			<div class="video">
 				<div class="screen"></div>
 				<div class="title"></div>
+				<div class="nav">${ htmlNav }</div>
 			</div>
-			<div class="list">${ htmVideolList }</div>
+
+			<div class="list"></div>
 		`;
-
-
-
-
-		return true;
-
-
-
-
-
-
-		if ( id == 'films' ) {
-
-		}
-
-		if ( id == 'films' ) {
-
-		}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		// найденая категория видео
-
-
-		
-		if ( objFiltred.group ) {
-
-			alert( objFiltred.id );
-		}
-
-
-
-
-
-
-
-
-
-
-
-		if ( id == 'asmr' ) {
-			//content.innerHTML = ComponentAsmr.html();
-
-			arrYoutube.forEach( k => {
-
-				if ( k.id == id ) {
-
-					console.log( k );
-
-					htmVideolList += `<div class="each" onclick="ComponentYoutube.clcImgYoutube( this )" data-href="${ k.href }" data-title="${ k.title }">
-						<div class="img">
-							<img src="https://i.ytimg.com/vi/${ k.href }/hqdefault.jpg">
-						</div>
-						<div class="title">${ k.title }</div>
-					</div>`;
-
-
-				}
-
-			});
-
-
-
-		}
-
-/*
-
-		if ( id == 'clips' ) 
-			content.innerHTML = ComponentClips.html();
-
-		if ( id == 'comedy' ) 
-			content.innerHTML = ComponentComedy.html();
-
-		if ( id == 'english' ) 
-			content.innerHTML = ComponentEnglish.html();
-
-		if ( id == 'films' ) 
-			content.innerHTML = ComponentFilms.html();
-
-		if ( id == 'kvn' ) 
-			content.innerHTML = ComponentKvn.html();
-*/
-
-
-
-
-
-
-
-
-
-
-
 	}
+
 
 
 
 	// вставка видео (из списка) в главный "экран"
-	static clcVideoFromList( id ) {
+	static clcNav( id ) {
 
+		btnLight( 'cmp-middle .video .nav', id );
 
+		//console.log( this.arrFiltred[ 0 ].arr );
+		document.querySelectorAll( '#content .video .screen' )[ 0 ].innerHTML = '';
 
+		//alert( id );
+		//console.log( this.arrFiltred[ 0 ].arr );
 
+		let arrFiltered = this.arrFiltred[ 0 ].arr;
+
+		if ( id != 'all' ) {
+			arrFiltered = this.arrFiltred[ 0 ].arr.filter( k => {
+				if ( k.cat[ id ])
+					return true; 
+			});
+		} 
+
+		//console.log( arrFiltered );
+		document.querySelectorAll( 'cmp-middle .list' )[ 0 ].innerHTML = ComponentListVideo.html( arrFiltered );
 	}
 
 
@@ -175,6 +115,32 @@ class ComponentMiddle {
 
 
 
+
+	static arr2arr222() {
+
+		let html = '';
+
+		arrYoutube.forEach( k => {
+
+
+			if ( k.id == 'arr2arr' ) {
+
+
+				k.arr.forEach( k1 => {
+					console.log( k1 );
+					html += `{ href: '${ k1.href }' , title: '${ k1.title }' , cat: { bebris_2: 1 , } , }, <br/>`;
+
+				});
+
+
+			}
+
+
+		});
+
+		return html;
+
+	}
 
 
 
