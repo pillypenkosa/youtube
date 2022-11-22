@@ -5,7 +5,7 @@ const arrYoutube = [
 	nav: [ 
 		{ id: 'all' 	, title: 'Все' 		, },
 		{ id: 'voice' 	, title: 'Голос' 	, },
-		{ id: 'other' 	, title: 'Другие' 	, },
+		{ id: 'other' 	, title: 'Разное' 	, },
 	],
 	arr: [
 		{ href: 'nka_upUVnu0', title: 'Alana - Relaxing Haircut' 									, cat: { voice: 1, } , },
@@ -1270,8 +1270,75 @@ const arrYoutube = [
 },
 
 
-{ 	id: 'clips', title: 'Клипы', arr: [
-		{ href: 'zfXBNQMj2SE', title: 'Alizee - Moi Lolita' 						, },
+{ 	
+	id: 'clips', title: 'Клипы', 
+	nav: [ 
+		{ id: 'all' 	, title: 'Все' 			, },
+		{ id: 'en' 		, title: 'Зарубежные' 	, },
+		{ id: 'ru' 		, title: 'Наши' 		, },
+	],
+	arr: [
+		{ href: 'YytZ5h9nOOo' , title: 'Alice Deejay - The lonely one' 					, cat: { en: 1, } , },
+		{ href: 'zfXBNQMj2SE' , title: 'Alizee - Moi Lolita' 							, cat: { en: 1, } , },
+		{ href: 'zEf423kYfqk' , title: 'Becky G & Natti Natasha - Sin pijama' 			, cat: { en: 1, } , },
+		{ href: 'C-u5WLJ9Yk4' , title: 'Britney Spears - Baby one More Time' 			, cat: { en: 1, } , },
+		{ href: 'Yy5cKX4jBkQ' , title: 'Britney Spears - Born to make you happy' 		, cat: { en: 1, } , },
+		{ href: 'Q4VK9_CfOLQ' , title: 'Britney Spears - Crazy' 						, cat: { en: 1, } , },
+		{ href: 'IlV7RhT6zHs' , title: 'Britney Spears - I\'m not a girl' 				, cat: { en: 1, } , },
+		{ href: '4vvBAONkYwI' , title: 'Britney Spears - Lucky' 						, cat: { en: 1, } , },
+		{ href: 'CduA0TULnow' , title: 'Britney Spears - Oops!...I did it again' 		, cat: { en: 1, } , },
+		{ href: 'PZYSiWHW8V0' , title: 'Britney Spears - Overprotected' 				, cat: { en: 1, } , },
+		{ href: 't0bPrt69rag' , title: 'Britney Spears - Sometimes' 					, cat: { en: 1, } , },
+		{ href: 'AJWtLf4-WWs' , title: 'Britney Spears - Stronger' 						, cat: { en: 1, } , },
+		{ href: '5RQxHyCTi18' , title: 'Captain Jack - Drill Instructor' 				, cat: { en: 1, } , },
+		{ href: '4zHm_6AQ7CY' , title: 'Dr.Alban - It\'s my life' 						, cat: { en: 1, } , },
+		{ href: '3GA3yFM22ao' , title: 'E-Type - Africa' 								, cat: { en: 1, } , },
+		{ href: 'svnE-eQVtPM' , title: 'E-Type - Angels Crying' 						, cat: { en: 1, } , },
+		{ href: 'HoT1GFrMods' , title: 'E-Type - Here I go again' 						, cat: { en: 1, } , },
+		{ href: 'pbWLvwE8zfw' , title: 'E-Type - I just wanna be with you' 				, cat: { en: 1, } , },
+		{ href: 'tp-iwlt75to' , title: 'E-Type - Russian lullaby' 						, cat: { en: 1, } , },
+		{ href: '7w1HeDqYCU4' , title: 'E-Type - This is the way' 						, cat: { en: 1, } , },
+		{ href: 'QNJL6nfu__Q' , title: 'Michael Jackson - They don\'t care about us' 	, cat: { en: 1, } , },
+		{ href: 'CQAT5qdG8tI' , title: 'Queen - The show must go on' 					, cat: { en: 1, } , },
+		{ href: 'dZDj2CnG5dE' , title: 'Ricky Martin - The cup of life' 				, cat: { en: 1, } , },
+		{ href: 'kc7X3q27b34' , title: 'Robert Miles - Children' 						, cat: { en: 1, } , },
+		{ href: '1M6q3PRxI3Q' , title: 'Sash & Dr.Alban - Colour the World' 			, cat: { en: 1, } , },
+		{ href: 'e-xkH8BWMXk' , title: 'Агата Кристи - Моряк' 							, cat: { ru: 1, } , },
+		{ href: 'JNxCwfnr-8w' , title: 'АлисА - Трасса Е-95' 							, cat: { ru: 1, } , },
+		{ href: 'soyckS4wgFM' , title: 'Бутырка - Кольщик' 								, cat: { ru: 1, } , },
+		{ href: 'MUxlAV_47q0' , title: 'Валерий Меладзе - Белые птицы' 					, cat: { ru: 1, } , },
+		{ href: 'LLCU65HYFkU' , title: 'Василий Лавров - Колотушка' 					, cat: { ru: 1, } , },
+		{ href: '3rfuOcn-wRM' , title: 'Виктор Зинчук - Каприс №24. Паганини' 			, cat: { ru: 1, } , },
+		{ href: '90ArrDU0p0M' , title: 'Восток - Танец жёлтых листьев' 					, cat: { ru: 1, } , },
+		{ href: 'hHcvEIFBJEs' , title: 'Евгений Кемеровский - Ностальгия' 				, cat: { ru: 1, } , },
+		{ href: 'DF6W1XD25Dc' , title: 'Звери - До скорой встречи' 						, cat: { ru: 1, } , },
+		{ href: 'qf0ibAffJWA' , title: 'И.Салтыкова - Бай-бай' 							, cat: { ru: 1, } , },
+		{ href: '-p6vBTg-wXA' , title: 'И.Салтыкова - Солнечный друг' 					, cat: { ru: 1, } , },
+		{ href: 'YjHtjSd7i6E' , title: 'Катя Лель - Долетай' 							, cat: { ru: 1, } , },
+		{ href: 'DZFwi8Tm7dE' , title: 'Л.Черникова - Влюблённый самолёт' 				, cat: { ru: 1, } , },
+		{ href: 'cGgbQFOK_L4' , title: 'Лицей - Осень' 									, cat: { ru: 1, } , },
+		{ href: 'ngsWYx0XN2I' , title: 'Натали - Ветер с моря дул' 						, cat: { ru: 1, } , },
+		{ href: '6J5kwV_gpeA' , title: 'Нэнси - Дым сигарет с ментолом' 				, cat: { ru: 1, } , },
+		{ href: 'tO91c8vbT7A' , title: 'Руки Вверх - Крошка моя' 						, cat: { ru: 1, } , },
+		{ href: 'cKyUHTF4vRc' , title: 'С.Жуков & Боня и Кузьмич - Королева красоты' 	, cat: { ru: 1, } , },
+		{ href: 'DLHlBWXtTjQ' , title: 'С.Рерих - Ладошки' 								, cat: { ru: 1, } , },
+		{ href: 'ttWZ-Fa1PBE' , title: 'Севара - Там нет меня' 							, cat: { ru: 1, } , },
+		{ href: 'fp0uP2FwgYE' , title: 'Стас Костюшкин - Опа Анапа' 					, cat: { ru: 1, } , },
+		{ href: 'T6kVFmf0soY' , title: 'Юлия Савичева - Сердцебиение' 					, cat: { ru: 1, } , },
+
+/*
+		{ href: '' , title: '' 					, cat: { : 1, } , },
+		{ href: '' , title: '' 					, cat: { : 1, } , },
+		{ href: '' , title: '' 					, cat: { : 1, } , },
+		{ href: '' , title: '' 					, cat: { : 1, } , },
+		{ href: '' , title: '' 					, cat: { : 1, } , },
+*/
+
+
+
+
+
+
 
 	], 
 },
