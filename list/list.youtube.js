@@ -73,6 +73,8 @@ const arrYoutube = [
 	id: 'vw_passat_b3b4', title: 'VW Passat B3/B4', 
 	nav: [ 
 		{ id: 'all' 			, title: 'Все' 			, },
+		{ id: 'b3' 				, title: 'B3' 			, },
+		{ id: 'b4' 				, title: 'B4' 			, },
 		{ id: 'total' 			, title: 'Общее' 		, },
 		{ id: 'diagnostics' 	, title: 'Диагностика' 	, },
 		{ id: 'tuning' 			, title: 'Тюнинг' 		, },
@@ -84,43 +86,56 @@ const arrYoutube = [
 		//{ id: '' 	, title: '' 		, },
 	],
 	arr: [
-		{ href: 'LIZroMaeAPE' , title: '28 летний b3. Авто для студента за 30000 руб' 											, cat: { total: 1 		, } , },
-		{ href: 'gJmBgUBpWWA' , title: '1988-1993г. Документалочка' 															, cat: { total: 1 		, } , },
-		{ href: 'VPOuA340mKI' , title: 'Exterior and Interior (1991)' 															, cat: { total: 1 		, } , },
-		{ href: 'x78uOR-FLTk' , title: 'Mono-Jetronic. Решение проблемы' 														, cat: { total: 1 		, } , },
-		{ href: 'lHxTfjp_HSc' , title: 'Авто до 100 тыс. рублей' 																, cat: { total: 1 		, } , },
-		{ href: 'neXxqSFf6bQ' , title: 'Анти тест драйв' 																		, cat: { total: 1 		, } , },
-		{ href: 'M00-vfYOdgU' , title: 'Дешёвки за 20 тысяч рублей' 															, cat: { total: 1 		, } , },
-		{ href: 'Z9K2o0frPXQ' , title: 'Жизнь B3 (Про поломки)' 																, cat: { total: 1 		, } , },
-		{ href: 'MEg4dKde9H4' , title: 'Заводим в сильный мороз' 																, cat: { total: 1 		, } , },
-		{ href: 'z6ooXGIuF3c' , title: 'Капсула времени с конфиската' 															, cat: { total: 1 		, } , },
-		{ href: 'OEoAvdItyHo' , title: 'Компрессор и полный привод уже с завода' 												, cat: { total: 1 		, } , },
-		{ href: 'wbyi-JBNke0' , title: 'Купил универсал' 																		, cat: { total: 1 		, } , },
-		{ href: 'lWBn0iP752s' , title: 'Можно ли еще покупать' 																	, cat: { total: 1 		, } , },
-		{ href: 'Z5AIXc7fLeA' , title: 'Моноинжектор не заводится. Заливает (RP 1.8)' 											, cat: { total: 1 		, } , },
-		{ href: 'LHFNBTvSxzc' , title: 'Мини анонс (ТехноМастер)' 																, cat: { total: 1 		, } , },
-		{ href: 'y1heZO7NpDs' , title: 'Обзор B3 седан' 																		, cat: { total: 1 		, } , },
-		{ href: 'UOJXFdfDMPk' , title: 'Обслуживание и ремонт' 																	, cat: { total: 1 		, } , },
-		{ href: 'Sv6Zy0K3yHQ' , title: 'Описание. ABF универсал' 																, cat: { total: 1 		, } , },
-		{ href: '82hWgg3mLPU' , title: 'Покупка. Основные моменты (MiniLady)' 													, cat: { total: 1 		, } , },
-		{ href: 'nfiBxfOGn8c' , title: 'Сравнительный тест Lanos и B3' 															, cat: { total: 1 		, } , },
-		{ href: 'ipJDcQo4CVs' , title: 'Тест-драйв. B3 Turbo' 																	, cat: { total: 1 		, } , },
-		{ href: 'o4OFM1SqwP8' , title: 'Тест-драйв. B3 1.9 дизель универсал' 													, cat: { total: 1 		, } , },
+		{ href: 'o4OFM1SqwP8' , title: 'B3. 1.9 Дизель. Универсал. Тест-драйв' 													, cat: { b3: 1, total: 1 		, } , },
+		{ href: 'Sv6Zy0K3yHQ' , title: 'B3. ABF. Универсал. Описание' 															, cat: { b3: 1, total: 1 		, } , },
+		{ href: 'x78uOR-FLTk' , title: 'B3. Mono-Jetronic. Решение проблемы' 													, cat: { b3: 1, total: 1 		, } , },
+		{ href: 'VPOuA340mKI' , title: 'B3. Exterior and Interior (1991)' 														, cat: { b3: 1, total: 1 		, } , },
+		{ href: 'LIZroMaeAPE' , title: 'B3. 28-летний. Авто для студента за 30000 руб' 											, cat: { b3: 1, total: 1 		, } , },
+		{ href: 'lHxTfjp_HSc' , title: 'B3. Авто до 100 тыс. рублей' 															, cat: { b3: 1, total: 1 		, } , },
+		{ href: 'neXxqSFf6bQ' , title: 'B3. Анти тест драйв' 																	, cat: { b3: 1, total: 1 		, } , },
+		{ href: 'M00-vfYOdgU' , title: 'B3. Дешёвки за 20 тысяч рублей (ch: AcademeG)' 											, cat: { b3: 1, total: 1 		, } , },
+		{ href: 'gJmBgUBpWWA' , title: 'B3. Документалочка' 																	, cat: { b3: 1, total: 1 		, } , },
+		{ href: 'th0NWHWM99E' , title: 'B3. Живые есть' 																		, cat: { b3: 1, total: 1 		, } , },
+		{ href: 'Z9K2o0frPXQ' , title: 'B3. Жизнь (про поломки)' 																, cat: { b3: 1, total: 1 		, } , },
+		{ href: 'z6ooXGIuF3c' , title: 'B3. Капсула времени. Идеальный с конфиската' 											, cat: { b3: 1, total: 1 		, } , },
+		{ href: 'OEoAvdItyHo' , title: 'B3. Компрессор и полный привод уже с завода' 											, cat: { b3: 1, total: 1 		, } , },
+		{ href: 'wbyi-JBNke0' , title: 'B3. Купил универсал' 																	, cat: { b3: 1, total: 1 		, } , },
+		{ href: 'MEL5T6PTw_s' , title: 'B3. Миллион рублей за 10 лет' 															, cat: { b3: 1, total: 1 		, } , },
+		{ href: 'lWBn0iP752s' , title: 'B3. Можно ли еще покупать' 																, cat: { b3: 1, total: 1 		, } , },
+		{ href: 'UOJXFdfDMPk' , title: 'B3. Обслуживание и ремонт' 																, cat: { b3: 1, total: 1 		, } , },
+		{ href: '82hWgg3mLPU' , title: 'B3. Покупка. Основные моменты (MiniLady)' 												, cat: { b3: 1, total: 1 		, } , },
+		{ href: 'y1heZO7NpDs' , title: 'B3. Седан' 																				, cat: { b3: 1, total: 1 		, } , },
+		{ href: 'ipJDcQo4CVs' , title: 'B3. Turbo. Тест-драйв' 																	, cat: { b3: 1, total: 1 		, } , },
+		{ href: 'nfiBxfOGn8c' , title: 'B3 и Lanos. Сравнительный тест' 														, cat: { b3: 1, total: 1 		, } , },
+		{ href: '_W4vnDZPU5w' , title: 'B4. 1.8. 1995. Тестдрайв от Арнольдыча' 												, cat: { b4: 1, total: 1 		, } , },
+		{ href: '56H9qvAWIzE' , title: 'B4. 1.9. TD против Audi A6 2.4 Quattro' 												, cat: { b4: 1, total: 1 		, } , },
+		
 
+
+
+		//{ href: '' , title: '' 													, cat: { total: 1 		, } , },
+		//{ href: '' , title: '' 													, cat: { total: 1 		, } , },
+		//{ href: '' , title: '' 													, cat: { total: 1 		, } , },
+
+
+
+
+		{ href: 'ZGuZ408ra7w' , title: 'ABS. Холостой ход. Как уменьшить (ch: Д.Мазницын)' 										, cat: { diagnostics: 1 , } , },
+		{ href: 'Z5AIXc7fLeA' , title: 'RP 1.8 Моноинжектор не заводится. Заливает' 											, cat: { diagnostics: 1 , } , },
 		{ href: 'ZUZiPI2zVZQ' , title: 'ВАГ-Ком 1' 																				, cat: { diagnostics: 1 , } , },
 		{ href: 'vvtUC_qhnBQ' , title: 'ВАГ-Ком 2' 																				, cat: { diagnostics: 1 , } , },
+		{ href: 'MEg4dKde9H4' , title: 'Заводим в сильный мороз' 																, cat: { total: 1 		, } , },
 		{ href: 'uDaHKhBI1cw' , title: 'Машину тянет влево. Причины и решение' 													, cat: { diagnostics: 1 , } , },
-		{ href: 'ZGuZ408ra7w' , title: 'ABS. Холостой ход. Как уменьшить (ch: Д.Мазницын)' 										, cat: { diagnostics: 1 , } , },
 		{ href: 'Q2XHYCHC4hY' , title: 'ЭБУ. Опрос. Коды медленных ошибок (ch: Д.Мазницын)' 									, cat: { diagnostics: 1 , } , },
 
 		{ href: 'U_u-SIitquU' , title: 'LED-подсветка (B3)' 																	, cat: { tuning: 1 		, } , },
-		{ href: 'XA6uHfkJwdU' , title: 'Делаем быстрее (B4)' 																	, cat: { tuning: 1 		, } , },
-		{ href: '0CERs4Mwee0' , title: 'Легкий руль после доработки золотника (B4)' 											, cat: { tuning: 1 		, } , },
-		{ href: 'GmhxUhtJAn8' , title: 'Мультируль от B5 (B4)' 																	, cat: { tuning: 1 		, } , },
-		{ href: 'DJN0CC9bM_4' , title: 'Ништяки с AliExpress 1 (B4)' 															, cat: { tuning: 1 		, } , },
-		{ href: 'TRszslMg03s' , title: 'Ништяки с AliExpress 2 (B4)' 															, cat: { tuning: 1 		, } , },
-		{ href: 'gcw7ODjHaV4' , title: 'Ништяки с AliExpress 3 (B4)' 															, cat: { tuning: 1 		, } , },
-		{ href: 'XEhc-RQeNRo' , title: 'Оптика новая (B4)' 																		, cat: { tuning: 1 		, } , },
+		{ href: 'XA6uHfkJwdU' , title: 'B4. Делаем быстрее' 																	, cat: { tuning: 1 		, } , },
+		{ href: '0CERs4Mwee0' , title: 'B4. Легкий руль после доработки золотника' 												, cat: { tuning: 1 		, } , },
+		{ href: 'GmhxUhtJAn8' , title: 'B4. Мультируль от B5' 																	, cat: { tuning: 1 		, } , },
+		{ href: 'DJN0CC9bM_4' , title: 'B4. Ништяки с AliExpress 1' 															, cat: { tuning: 1 		, } , },
+		{ href: 'TRszslMg03s' , title: 'B4. Ништяки с AliExpress 2' 															, cat: { tuning: 1 		, } , },
+		{ href: 'gcw7ODjHaV4' , title: 'B4. Ништяки с AliExpress 3' 															, cat: { tuning: 1 		, } , },
+		{ href: 'XEhc-RQeNRo' , title: 'B4. Оптика новая' 																		, cat: { tuning: 1 		, } , },
 		{ href: 'AVbQCAxm0nw' , title: 'Разварки R14' 																			, cat: { tuning: 1 		, } , },
 		{ href: '_MtKBLCRhzU' , title: 'Редкие вещи' 																			, cat: { tuning: 1 		, } , },
 		{ href: 'JOJdYI6aZJA' , title: 'Решетка bad boy своими руками. Стиль 90е' 												, cat: { tuning: 1 		, } , },
@@ -158,9 +173,43 @@ const arrYoutube = [
 		{ href: 'sLaqztwsMEE' , title: 'Датчик холла - Проверка простая' 														, cat: { sensors: 1 	, } , },
 		
 		{ href: 'rCPKpKbkO-U' , title: '2Е. Обзор' 																				, cat: { engine: 1 		, } , },
+		{ href: 'rOBgACZE8HI' , title: '2E. Лечим нестабильный холостой ход' 													, cat: { engine: 1 		, } , },
+		{ href: 'o6lmtCrkI9g' , title: '2E. Плохо заводится. Долго запускается' 												, cat: { engine: 1 		, } , },
+		{ href: '1ao678owDL8' , title: '2E. ГБЦ. Прокладка. Замена' 															, cat: { engine: 1 		, } , },
+		{ href: 'C5sSE7Q7z0U' , title: '2E. ГРМ. Ремень. Замена' 																, cat: { engine: 1 		, } , },
+		{ href: 'H-li6avu7rU' , title: '2E. Дроссель' 																			, cat: { engine: 1 		, } , },
+		{ href: 'IBGf68KZ0_U' , title: '2E. Разборка' 																			, cat: { engine: 1 		, } , },
+		{ href: 'nBMNNRteEOY' , title: '2E. Golf. Сборка 1 (ch:Андрей Козлов)' 													, cat: { engine: 1 		, } , },
+		{ href: 'JBmCpineixA' , title: '2E. Golf. Сборка 2 (ch:Андрей Козлов)' 													, cat: { engine: 1 		, } , },
+		{ href: '1j5KHWL9sqY' , title: '2E. Трубки вакуумные. Правильное подключение' 											, cat: { engine: 1 		, } , },
+		
+
 		{ href: 'w9iZL93ZiIw' , title: 'ADY поверх 2E' 																			, cat: { engine: 1 		, } , },
 		{ href: 'o5_aD3AXSRw' , title: 'AGG. Начало ремонта, замена МСК (ch: GarageLip)' 										, cat: { engine: 1 		, } , },
 		{ href: 'qFN0OZbVtfY' , title: 'AGG. Поломки и проблемы' 																, cat: { engine: 1 		, } , },
+		{ href: 'Gpq82wqXxjk' , title: 'B3. ГБЦ. Прокладка. Замена' 															, cat: { engine: 1 		, } , },
+		{ href: 'vu6EvQ1oyek' , title: 'B3. ГРМ. Метки. Установка' 																, cat: { engine: 1 		, } , },
+		{ href: 'kXaaMSauqrY' , title: 'B3 1.8 ГРМ. Ремень. Замена' 															, cat: { engine: 1 		, } , },
+		{ href: 'Sx1Tdwc7OTw' , title: 'B3 PF 1.8 Ремень и помпа. Замена' 														, cat: { engine: 1 		, } , },
+		{ href: 'sXwerUcHb6c' , title: 'B3/B4. ГРМ. Метки' 																		, cat: { engine: 1 		, } , },
+
+
+
+
+
+
+
+
+
+
+		//{ href: '' , title: '' 											, cat: { engine: 1 		, } , },
+
+
+
+
+
+
+
 
 	],
 },
@@ -1268,8 +1317,6 @@ const arrYoutube = [
 
 	], 
 },
-
-
 { 	
 	id: 'clips', title: 'Клипы', 
 	nav: [ 
@@ -1343,12 +1390,32 @@ const arrYoutube = [
 	], 
 },
 
+{ 	
+	id: 'sport', title: 'Спорт', 
+	nav: [ 
+		{ id: 'all' 		, title: 'Все' 			, },
+	],
+	arr: [
 
-{ 	id: 'focus', title: 'Фокусы', arr: [
+		{ href: 'mbeub_iDA0s' , title: 'Moby - Bring Sally up (timer)' 											, cat: { sport: 1 		, } , },
+
+
+	], 
+},
+{ 	
+	id: 'focus', title: 'Фокусы', 
+	nav: [ 
+		{ id: 'all' 		, title: 'Все' 			, },
+	],
+	arr: [
 		{ href: 'cGyocPsApHk', title: 'Sacred Riana' 						, },
 
 	], 
 },
+
+
+
+
 
 
 
