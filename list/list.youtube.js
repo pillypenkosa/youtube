@@ -16,7 +16,7 @@ const arrYoutube = [
 		{ href: '8hkGXGZZJpg', title: 'Darling - Doctor Roleplay' 									, cat: { voice: 1, } , },
 		{ href: 'CbFtevW1WQs', title: 'Cosmic Tingles - Heart Doctor' 								, cat: { voice: 1, } , },
 		{ href: '7MekvHvdufA', title: 'Lizi - Medical RP' 											, cat: { voice: 1, } , },
-		{ href: 'rUoO4t6J2YU', title: 'Lizi - Most Relaxing Ear Cleaning' 							, cat: { voice: 1, } , },
+		{ href: 'yP-m257bJ0c', title: 'Lizi -  rawing You Up Close'									, cat: { voice: 1, } , },
 		{ href: 'ZkQGMz8F6is', title: 'Lizi - Tingly Face Examination' 								, cat: { voice: 1, } , },
 		{ href: 's-YbJPuegt8', title: 'MissCoookiez - Ethan Carter' 								, cat: { voice: 1, } , },
 		{ href: 'Ac5qu4MySVg', title: 'MissCoookiez - Painting Space' 								, cat: { voice: 1, } , },
@@ -1164,16 +1164,10 @@ const arrYoutube = [
 		{ href: 'XMWiN1mnw7c', title: 'Гадя Петрович (М.Галустян, А.Ревва)' 							, },
 		{ href: 'glTt1pSsE_E', title: 'Михаил Брюк (Уральские Пельмени)' 								, },
 		{ href: '_I7I2DdRv54', title: 'Новогоднее обращение (Транзит)'  								, },
+		{ href: 'ubfT9eOWZaQ', title: 'После бурной ночи (Кембридж)'  									, },
 		{ href: 'GSsNFJDXjlw', title: 'Похмелье после НГ (БГУ)'  										, },
 		{ href: 'wVEww05OMGg', title: 'Рэп президента'  												, },
 		{ href: '0zg2ek5lw1I', title: 'Училка на уроке (Дежа Вю)'  										, },
-
-
-
-
-
-
-
 
 	], 
 },
