@@ -1,4 +1,130 @@
+
+
+
+
+
+
+
+
+
+
 const arrYoutube = [
+
+
+
+/*
+
+
+{
+	href: '', title: '', year: 2024, 
+	hash: { trailer: 1, movie: 1, },
+},
+
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+{
+	href: '5A6YjRSvR0Q', title: 'Титаник - 2', year: 2024, 
+	hash: { trailer: 1, movie: 1, },
+},
+{
+	href: 'NQ_HvTBaFoo', title: 'Планета обезьян', year: 2024, 
+	hash: { trailer: 1, movie: 1, },
+},
+{
+	href: 'ztZ8BxMXFB4', title: 'Пираты Карибского моря - 6', year: 2024, 
+	hash: { trailer: 1, movie: 1, },
+},
+{
+	href: 'nRGEnVDIuhY', title: 'Хищник - 6', year: 2024, 
+	hash: { trailer: 1, movie: 1, },
+},
+{
+	href: 'QdBZY2fkU-0', title: 'GTA - 6', year: 2024, 
+	hash: { trailer: 1, game: 1, },
+},
+{
+	href: 'NK0E92NHmw8', title: 'Миссия невыполнима - 8', year: 2024, 
+	hash: { trailer: 1, movie: 1, },
+},
+{
+	href: '', title: '', year: 2024, 
+	hash: { trailer: 1, movie: 1, },
+},
+{
+	href: 'kKkag5TyLDk', title: 'Назад в будущее - 4', year: 2024, 
+	hash: { trailer: 1, movie: 1, },
+},
+{
+	href: 'Wfo9GxZauEc', title: 'Джуманджи - 4 ', year: 2024, 
+	hash: { trailer: 1, movie: 1, },
+},
+{
+	href: 'IRmglry9Kas', title: 'Терминатор - 7 // 01', year: 2024, 
+	hash: { trailer: 1, movie: 1, },
+},
+{
+	href: '1oLFipesEy4', title: 'Терминатор - 7 // 02', year: 2024, 
+	hash: { trailer: 1, movie: 1, },
+},
+{
+	href: '6nMGsqw8O2k', title: 'Годзилла и Конг: Новая империя // 01', year: 2024, 
+	hash: { trailer: 1, movie: 1, },
+},
+{
+	href: 'lV1OOlGwExM', title: 'Годзилла и Конг: Новая империя // 02', year: 2024, 
+	hash: { trailer: 1, movie: 1, },
+},
+{
+	href: 'u5_gxB_87VQ', title: 'KONG 2: Son Of Kong', year: 2024, 
+	hash: { trailer: 1, movie: 1, },
+},
+{
+	href: 'UinsNBOTNyU', title: 'Jurassic Park - 4 // 01', year: 2024, 
+	hash: { trailer: 1, movie: 1, },
+},
+{
+	href: '6nTGNvTgCmE', title: 'Jurassic Park - 4 // 02', year: 2024, 
+	hash: { trailer: 1, movie: 1, },
+},
+
+
+
+
+
+
+
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 { 	id: 'asmr', title: 'ASMR', 
@@ -1279,7 +1405,7 @@ const arrYoutube = [
 		{ href: '' , title: '' 					, cat: { : 1, } , },
 		{ href: '' , title: '' 					, cat: { : 1, } , },
 		{ href: '' , title: '' 					, cat: { : 1, } , },
-*/
+
 
 
 
@@ -1324,7 +1450,7 @@ const arrYoutube = [
 
 
 
-
+*/
 
 
 

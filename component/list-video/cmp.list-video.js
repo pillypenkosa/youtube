@@ -25,11 +25,12 @@ class ComponentListVideo {
 		arr.forEach( k => {
 			innerHTML += `<div class="each" onclick="ComponentListVideo.clc( this )" data-href="${ k.href }" data-title="${ k.title }">
 				<div class="img">
-					<img src="https://i.ytimg.com/vi/${ k.href }/hqdefault.jpg">
+					<img src="img/screen4video/${ k.href }.png">
 				</div>
 				<div class="title">${ k.title }</div>
 			</div>`;
 		});
+		//<img src="https://i.ytimg.com/vi/${ k.href }/hqdefault.jpg">
 
 
 		let data = {

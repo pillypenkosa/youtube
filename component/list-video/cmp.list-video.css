@@ -15,7 +15,7 @@ cmp-list-video {
 		}
 
 	cmp-list-video .each .img {
-		height: 150px;
+		height: 120px;
 		width: 220px;
 	}
 		cmp-list-video .each .img img {
